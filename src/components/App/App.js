@@ -15,7 +15,7 @@ class App extends Component {
   componentDidMount(){
     console.log( 'in componentDidMount, props:', this.props );
   } // end componentDidMount
-  
+
   render() {
     return (
       <Router>
@@ -34,7 +34,7 @@ class App extends Component {
             </header>
 
             <div className="content-container">
-              <Route exact path="/" component={SpeedControl} dispatch={this.props.dispatch}/>
+              <Route exact path="/" render={(props) => <SpeedControl {...props} dispatch={this.props.dispatch} />}/>
               <Route path="/passengers" component={Passengers} />
               <Route path="/dashboard" component={Dashboard} />
             </div>
