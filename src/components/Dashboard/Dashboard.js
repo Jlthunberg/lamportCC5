@@ -10,7 +10,7 @@ class Dashboard extends Component {
       <div>
         <h2>Dashboard</h2>
         
-        <p>SPEED: GOES HERE</p>
+        {/* <p>SPEED: {this.reduxState}</p> */}
         <p>PASSENGER COUNT: GOES HERE</p>
       </div>
     )

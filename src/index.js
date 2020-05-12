@@ -6,6 +6,7 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux';
 
 const firstInitialState = 0;
+
 // put your reducer here!
 const firstReducer = (state= firstInitialState, action) => {
     console.log('in firstReducer', 'state:', state, 'action:', action);
